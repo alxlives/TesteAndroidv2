@@ -13,10 +13,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.microsoft.appcenter.AppCenter;
-import com.microsoft.appcenter.analytics.Analytics;
-import com.microsoft.appcenter.crashes.Crashes;
-
 import br.com.giovanni.testebank.Interactor.LoginInteractor;
 import br.com.giovanni.testebank.Presenter.PresenterLogin;
 import br.com.giovanni.testebank.R;
@@ -52,8 +48,6 @@ public class LoginActivity extends AppCompatActivity implements IItentLogin {
             getUser.setText(sharedPreferences.getString("usuario", ""));
         }
         btnLoginOnClick();
-
-        AppCenter.start(getApplication(), "7586b87c-e567-455e-855f-68134f22dd29", Analytics.class, Crashes.class);
     }
 
     public void btnLoginOnClick() {
