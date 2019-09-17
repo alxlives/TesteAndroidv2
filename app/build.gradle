@@ -5,11 +5,12 @@ android {
     buildToolsVersion "29.0.1"
     defaultConfig {
         applicationId "br.com.giovanni.testebank"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [HOCKEYAPP_APP_ID: "6da1a20ef53945d18706ae812a434f70"]
     }
     buildTypes {
         release {
@@ -35,5 +36,6 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'androidx.cardview:cardview:1.0.0'
 
+    implementation 'net.hockeyapp.android:HockeySDK:5.2.0'
 }
 
